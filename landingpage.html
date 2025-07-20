@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0055a5;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #004080;
+      border-radius: 4px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 51, 102, 0.6), rgba(0, 51, 102, 0.6)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .hero a {
+      background-color: #00bcd4;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #0099aa;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    .feature-box {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: scale(1.05);
+    }
+
+    .feature-box i {
+      font-size: 2.5rem;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .feature-box h3 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Your First Landing Page</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Build with HTML & CSS</h1>
+    <p>This project helps beginners learn how to structure web pages, style content, and create user-friendly layouts.</p>
+    <a href="#features">Get Started</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-box">
+      <i class="fas fa-columns"></i>
+      <h3>Create Columns</h3>
+      <p>Use HTML divs and CSS Flexbox or Grid to create visually appealing column layouts.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-object-group"></i>
+      <h3>Design Sections</h3>
+      <p>Divide your content into meaningful sections like header, hero, features, and footer.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Apply Styling</h3>
+      <p>Utilize CSS for color palettes, spacing, padding, and typography to enhance visual appeal.</p>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <p>&copy; 2025 Beginner Landing Page. Designed for learning and creativity.</p>
+  </footer>
+</body>
+
+</html>
